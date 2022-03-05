@@ -20,4 +20,16 @@ export const hexes = [
 
   },
 
+  {
+
+    n: "Aldershot",
+
+    q: -5,
+
+    r: -11,
+
+  },
+
+  
+
 ];
