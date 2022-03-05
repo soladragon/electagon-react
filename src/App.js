@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     const { hexagons, config } = this.state;
     const layout = config.layout;
-    const size = { x: 10, y: 10 };
+    const size = { x: 1.5, y: 1.5 };
     return (
       <div className="App">
         <h2>Select grid type and configuration from dropdown.</h2>
@@ -37,9 +37,9 @@ class App extends Component {
           </select>
         </div>
         <hr />
-        <HexGrid width={config.width} height={config.height} width="100%">
+        <HexGrid width={config.width} height={config.height} >
           {/* <Layout size={size} flat={layout.flat} spacing={layout.spacing} origin={config.origin}> */}
-          <Layout size={{ x: 1, y: 1}} flat={layout.flat} spacing={layout.spacing} origin={config.origin}>
+          <Layout size={size} flat={layout.flat} spacing={layout.spacing} origin={config.origin}>
             {
               // note: key must be unique between re-renders.
               // using config.mapProps+i makes a new key when the goal template chnages.
@@ -49,7 +49,7 @@ class App extends Component {
               //     <Text>{index}</Text>
               //   </Hexagon>
               // ))
-             hexes.map((hex, i) => <Hexagon key={hex.id} q={hex.q} r={hex.r} s={1} />) 
+             hexes.map((hex, i) => <Hexagon key={hex.id} q={hex.q} r={hex.r} s={1} className={"className"} />) 
             //   <Hexagon key={1} q={-3} r={-1} s={1} >
             //   {/* <Text>{index}</Text> */}
             // </Hexagon>

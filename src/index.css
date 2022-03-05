@@ -16,6 +16,11 @@ body {
   user-drag: element;
 }
 
+.className g {
+  fill: #2254F4;
+  fill-opacity: 0.6;
+}
+
 svg {
 
 }
@@ -31,7 +36,7 @@ svg g:hover text {
 }
 
 svg g polygon {
-  stroke: #3F51B5;
+  stroke: #ebebeb;
   stroke-width: 0.2;
   transition: fill-opacity .2s;
 }
