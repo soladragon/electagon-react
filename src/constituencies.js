@@ -1,11 +1,771 @@
 const hexes = [
   {
-    "n": "",
-    "q": 0,
-    "r": 0
+    "n": "Upper Bann",
+    "q": -10,
+    "r": -12
   },
   {
-    "n": "",
+    "n": "Lagan Valley",
+    "q": -9,
+    "r": -12
+  },
+  {
+    "n": "Belfast South",
+    "q": -8,
+    "r": -12
+  },
+  {
+    "n": "South Down",
+    "q": -7,
+    "r": -12
+  },
+  {
+    "n": "Blackpool North and Cleveleys",
+    "q": 0,
+    "r": -12
+  },
+  {
+    "n": "Morecambe and Lunesdale",
+    "q": 1,
+    "r": -12
+  },
+  {
+    "n": "Lancaster and Fleetwood",
+    "q": 2,
+    "r": -12
+  },
+  {
+    "n": "Ribble Valley",
+    "q": 3,
+    "r": -12
+  },
+  {
+    "n": "Bishop Auckland",
+    "q": 4,
+    "r": -12
+  },
+  {
+    "n": "Darlington",
+    "q": 5,
+    "r": -12
+  },
+  {
+    "n": "Stockton South",
+    "q": 6,
+    "r": -12
+  },
+  {
+    "n": "Middlesbrough",
+    "q": 7,
+    "r": -12
+  },
+  {
+    "n": "Middlesbrough South and East Cleveland",
+    "q": 8,
+    "r": -12
+  },
+  {
+    "n": "Scarborough and Whitby",
+    "q": 8,
+    "r": -11
+  },
+  {
+    "n": "Thirsk and Malton",
+    "q": 7,
+    "r": -11
+  },
+  {
+    "n": "York Central",
+    "q": 6,
+    "r": -11
+  },
+  {
+    "n": "York Outer",
+    "q": 5,
+    "r": -11
+  },
+  {
+    "n": "Harrogate and Knaresborough",
+    "q": 4,
+    "r": -11
+  },
+  {
+    "n": "Richmond (Yorks)",
+    "q": 3,
+    "r": -11
+  },
+  {
+    "n": "Skipton and Ripon",
+    "q": 2,
+    "r": -11
+  },
+  {
+    "n": "Pendle",
+    "q": 1,
+    "r": -11
+  },
+  {
+    "n": "Wyre and Preston North",
+    "q": 0,
+    "r": -11
+  },
+  {
+    "n": "Preston",
+    "q": -1,
+    "r": -11
+  },
+  {
+    "n": "Blackpool South",
+    "q": -2,
+    "r": -11
+  },
+  {
+    "n": "Newry and Armagh",
+    "q": -9,
+    "r": -11
+  },
+  {
+    "n": "Fylde",
+    "q": -2,
+    "r": -10
+  },
+  {
+    "n": "Blackburn",
+    "q": -1,
+    "r": -10
+  },
+  {
+    "n": "Hyndburn",
+    "q": 0,
+    "r": -10
+  },
+  {
+    "n": "Burnley",
+    "q": 1,
+    "r": -10
+  },
+  {
+    "n": "Keighley",
+    "q": 2,
+    "r": -10
+  },
+  {
+    "n": "Shipley",
+    "q": 3,
+    "r": -10
+  },
+  {
+    "n": "Pudsey",
+    "q": 4,
+    "r": -10
+  },
+  {
+    "n": "Leeds North West",
+    "q": 5,
+    "r": -10
+  },
+  {
+    "n": "Leeds North East",
+    "q": 6,
+    "r": -10
+  },
+  {
+    "n": "Elmet and Rothwell",
+    "q": 7,
+    "r": -10
+  },
+  {
+    "n": "East Yorkshire",
+    "q": 8,
+    "r": -10
+  },
+  {
+    "n": "Kingston upon Hull North",
+    "q": 8,
+    "r": -9
+  },
+  {
+    "n": "Haltemprice and Howden",
+    "q": 7,
+    "r": -9
+  },
+  {
+    "n": "Leeds East",
+    "q": 6,
+    "r": -9
+  },
+  {
+    "n": "Leeds Central",
+    "q": 5,
+    "r": -9
+  },
+  {
+    "n": "Leeds West",
+    "q": 4,
+    "r": -9
+  },
+  {
+    "n": "Bradford East",
+    "q": 3,
+    "r": -9
+  },
+  {
+    "n": "Bradford West",
+    "q": 2,
+    "r": -9
+  },
+  {
+    "n": "Calder Valley",
+    "q": 1,
+    "r": -9
+  },
+  {
+    "n": "Rossendale and Darwen",
+    "q": 0,
+    "r": -9
+  },
+  {
+    "n": "Bury North",
+    "q": -1,
+    "r": -9
+  },
+  {
+    "n": "Chorley",
+    "q": -2,
+    "r": -9
+  },
+  {
+    "n": "South Ribble",
+    "q": -3,
+    "r": -9
+  },
+  {
+    "n": "Southport",
+    "q": -4,
+    "r": -9
+  },
+  {
+    "n": "Sefton Central",
+    "q": -5,
+    "r": -8
+  },
+  {
+    "n": "West Lancashire",
+    "q": -4,
+    "r": -8
+  },
+  {
+    "n": "Wigan",
+    "q": -3,
+    "r": -8
+  },
+  {
+    "n": "Bury South",
+    "q": -2,
+    "r": -8
+  },
+  {
+    "n": "Heywood and Middleton",
+    "q": -1,
+    "r": -8
+  },
+  {
+    "n": "Rochdale",
+    "q": 0,
+    "r": -8
+  },
+  {
+    "n": "Halifax",
+    "q": 1,
+    "r": -8
+  },
+  {
+    "n": "Bradford South",
+    "q": 2,
+    "r": -8
+  },
+  {
+    "n": "Batley and Spen",
+    "q": 3,
+    "r": -8
+  },
+  {
+    "n": "Morley and Outwood",
+    "q": 4,
+    "r": -8
+  },
+  {
+    "n": "Normanton, Pontefract and Castleford",
+    "q": 5,
+    "r": -8
+  },
+  {
+    "n": "Selby and Ainsty",
+    "q": 6,
+    "r": -8
+  },
+  {
+    "n": "Kingston upon Hull West and Hessle",
+    "q": 7,
+    "r": -8
+  },
+  {
+    "n": "Beverley and Holderness",
+    "q": 8,
+    "r": -8
+  },
+  {
+    "n": "Kingston upon Hull East",
+    "q": 7,
+    "r": -7
+  },
+  {
+    "n": "Cleethorpes",
+    "q": 6,
+    "r": -7
+  },
+  {
+    "n": "Brigg and Goole",
+    "q": 5,
+    "r": -7
+  },
+  {
+    "n": "Hemsworth",
+    "q": 4,
+    "r": -7
+  },
+  {
+    "n": "Wakefield",
+    "q": 3,
+    "r": -7
+  },
+  {
+    "n": "Dewsbury",
+    "q": 2,
+    "r": -7
+  },
+  {
+    "n": "Huddersfield",
+    "q": 1,
+    "r": -7
+  },
+  {
+    "n": "Colne Valley",
+    "q": 0,
+    "r": -7
+  },
+  {
+    "n": "Oldham East and Saddleworth",
+    "q": -1,
+    "r": -7
+  },
+  {
+    "n": "Oldham West and Royton",
+    "q": -2,
+    "r": -7
+  },
+  {
+    "n": "Bolton North East",
+    "q": -3,
+    "r": -7
+  },
+  {
+    "n": "Bolton West",
+    "q": -4,
+    "r": -7
+  },
+  {
+    "n": "Makerfield",
+    "q": -5,
+    "r": -7
+  },
+  {
+    "n": "Bootle",
+    "q": -6,
+    "r": -7
+  },
+  {
+    "n": "Liverpool, Walton",
+    "q": -7,
+    "r": -6
+  },
+  {
+    "n": "Knowsley",
+    "q": -6,
+    "r": -6
+  },
+  {
+    "n": "Leigh",
+    "q": -5,
+    "r": -6
+  },
+  {
+    "n": "Bolton South East",
+    "q": -4,
+    "r": -6
+  },
+  {
+    "n": "Blackley and Broughton",
+    "q": -3,
+    "r": -6
+  },
+  {
+    "n": "Ashton-under-Lyne",
+    "q": -2,
+    "r": -6
+  },
+  {
+    "n": "Stalybridge and Hyde",
+    "q": -1,
+    "r": -6
+  },
+  {
+    "n": "Penistone and Stocksbridge",
+    "q": 0,
+    "r": -6
+  },
+  {
+    "n": "Barnsley Central",
+    "q": 1,
+    "r": -6
+  },
+  {
+    "n": "Barnsley East",
+    "q": 2,
+    "r": -6
+  },
+  {
+    "n": "Doncaster North",
+    "q": 3,
+    "r": -6
+  },
+  {
+    "n": "Doncaster Central",
+    "q": 4,
+    "r": -6
+  },
+  {
+    "n": "Scunthorpe",
+    "q": 5,
+    "r": -6
+  },
+  {
+    "n": "Great Grimsby",
+    "q": 6,
+    "r": -6
+  },
+  {
+    "n": "Louth and Horncastle",
+    "q": 7,
+    "r": -6
+  },
+  {
+    "n": "Boston and Skegness",
+    "q": 7,
+    "r": -5
+  },
+  {
+    "n": "Lincoln",
+    "q": 6,
+    "r": -5
+  },
+  {
+    "n": "Gainsborough",
+    "q": 5,
+    "r": -5
+  },
+  {
+    "n": "Don Valley",
+    "q": 4,
+    "r": -5
+  },
+  {
+    "n": "Rotherham",
+    "q": 3,
+    "r": -5
+  },
+  {
+    "n": "Wentworth and Dearne",
+    "q": 2,
+    "r": -5
+  },
+  {
+    "n": "Sheffield, Brightside and Hillsborough",
+    "q": 1,
+    "r": -5
+  },
+  {
+    "n": "Sheffield, Hallam",
+    "q": 0,
+    "r": -5
+  },
+  {
+    "n": "Denton and Reddish",
+    "q": -1,
+    "r": -5
+  },
+  {
+    "n": "Manchester, Gorton",
+    "q": -2,
+    "r": -5
+  },
+  {
+    "n": "Manchester Central",
+    "q": -3,
+    "r": -5
+  },
+  {
+    "n": "Salford and Eccles",
+    "q": -4,
+    "r": -5
+  },
+  {
+    "n": "Worsley and Eccles South",
+    "q": -5,
+    "r": -5
+  },
+  {
+    "n": "St Helens North",
+    "q": -6,
+    "r": -5
+  },
+  {
+    "n": "Liverpool, West Derby",
+    "q": -7,
+    "r": -5
+  },
+  {
+    "n": "Liverpool, Riverside",
+    "q": -8,
+    "r": -4
+  },
+  {
+    "n": "St Helens South and Whiston",
+    "q": -7,
+    "r": -4
+  },
+  {
+    "n": "Warrington North",
+    "q": -6,
+    "r": -4
+  },
+  {
+    "n": "Stretford and Urmston",
+    "q": -5,
+    "r": -4
+  },
+  {
+    "n": "Manchester, Withington",
+    "q": -4,
+    "r": -4
+  },
+  {
+    "n": "Stockport",
+    "q": -3,
+    "r": -4
+  },
+  {
+    "n": "Hazel Grove",
+    "q": -2,
+    "r": -4
+  },
+  {
+    "n": "High Peak",
+    "q": -1,
+    "r": -4
+  },
+  {
+    "n": "Sheffield, Heeley",
+    "q": 0,
+    "r": -4
+  },
+  {
+    "n": "Sheffield Central",
+    "q": 1,
+    "r": -4
+  },
+  {
+    "n": "Sheffield South East",
+    "q": 2,
+    "r": -4
+  },
+  {
+    "n": "Rother Valley",
+    "q": 3,
+    "r": -4
+  },
+  {
+    "n": "Bassetlaw",
+    "q": 4,
+    "r": -4
+  },
+  {
+    "n": "Newark",
+    "q": 5,
+    "r": -4
+  },
+  {
+    "n": "Sleaford and North Hykeham",
+    "q": 6,
+    "r": -4
+  },
+  {
+    "n": "South Holland and The Deepings",
+    "q": 6,
+    "r": -3
+  },
+  {
+    "n": "Grantham and Stamford",
+    "q": 5,
+    "r": -3
+  },
+  {
+    "n": "Sherwood",
+    "q": 4,
+    "r": -3
+  },
+  {
+    "n": "Mansfield",
+    "q": 3,
+    "r": -3
+  },
+  {
+    "n": "Bolsover",
+    "q": 2,
+    "r": -3
+  },
+  {
+    "n": "Chesterfield",
+    "q": 1,
+    "r": -3
+  },
+  {
+    "n": "North East Derbyshire",
+    "q": 0,
+    "r": -3
+  },
+  {
+    "n": "Derbyshire Dales",
+    "q": -1,
+    "r": -3
+  },
+  {
+    "n": "Macclesfield",
+    "q": -2,
+    "r": -3
+  },
+  {
+    "n": "Cheadle",
+    "q": -3,
+    "r": -3
+  },
+  {
+    "n": "Wythenshawe and Sale East",
+    "q": -4,
+    "r": -3
+  },
+  {
+    "n": "Altrincham and Sale West",
+    "q": -5,
+    "r": -3
+  },
+  {
+    "n": "Warrington South",
+    "q": -6,
+    "r": -3
+  },
+  {
+    "n": "Garston and Halewood",
+    "q": -7,
+    "r": -3
+  },
+  {
+    "n": "Liverpool, Wavertree",
+    "q": -8,
+    "r": -3
+  },
+  {
+    "n": "Wallasey",
+    "q": -9,
+    "r": -3
+  },
+  {
+    "n": "Wirral West",
+    "q": -10,
+    "r": -2
+  },
+  {
+    "n": "Birkenhead",
+    "q": -9,
+    "r": -2
+  },
+  {
+    "n": "Wirral South",
+    "q": -8,
+    "r": -2
+  },
+  {
+    "n": "Halton",
+    "q": -7,
+    "r": -2
+  },
+  {
+    "n": "Weaver Vale",
+    "q": -6,
+    "r": -2
+  },
+  {
+    "n": "Tatton",
+    "q": -5,
+    "r": -2
+  },
+  {
+    "n": "Congleton",
+    "q": -4,
+    "r": -2
+  },
+  {
+    "n": "Stoke-on-Trent North",
+    "q": -3,
+    "r": -2
+  },
+  {
+    "n": "Staffordshire Moorlands",
+    "q": -2,
+    "r": -2
+  },
+  {
+    "n": "Mid Derbyshire",
+    "q": -1,
+    "r": -2
+  },
+  {
+    "n": "Derby North",
+    "q": 0,
+    "r": -2
+  },
+  {
+    "n": "Amber Valley",
+    "q": 1,
+    "r": -2
+  },
+  {
+    "n": "Ashfield",
+    "q": 2,
+    "r": -2
+  },
+  {
+    "n": "Nottingham North",
+    "q": 3,
+    "r": -2
+  },
+  {
+    "n": "Gedling",
+    "q": 4,
+    "r": -2
+  },
+  {
+    "n": "Rutland and Melton",
     "q": 5,
     "r": -2
   },
