@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     const { hexagons, config } = this.state;
     const layout = config.layout;
-    const size = { x: 1.5, y: 1.5 };
+    const size = { x: 1.6, y: 1.6 };
     return (
       <div className="App">
         <h2>Select grid type and configuration from dropdown.</h2>

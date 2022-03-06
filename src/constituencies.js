@@ -1,5 +1,210 @@
 const hexes = [
   {
+    "n": "Orkney and Shetland",
+    "q": 9,
+    "r": -28
+  },
+  {
+    "n": "Na h-Eileanan an Iar",
+    "q": 5,
+    "r": -26
+  },
+  {
+    "n": "Caithness, Sutherland and Easter Ross",
+    "q": 7,
+    "r": -26
+  },
+  {
+    "n": "Aberdeen North",
+    "q": 9,
+    "r": -25
+  },
+  {
+    "n": "Gordon",
+    "q": 8,
+    "r": -25
+  },
+  {
+    "n": "Inverness, Nairn, Badenoch and Strathspey",
+    "q": 6,
+    "r": -25
+  },
+  {
+    "n": "Ross, Skye and Lochaber",
+    "q": 5,
+    "r": -24
+  },
+  {
+    "n": "Moray",
+    "q": 6,
+    "r": -24
+  },
+  {
+    "n": "Banff and Buchan",
+    "q": 7,
+    "r": -24
+  },
+  {
+    "n": "West Aberdeenshire and Kincardine",
+    "q": 8,
+    "r": -24
+  },
+  {
+    "n": "Aberdeen South",
+    "q": 9,
+    "r": -24
+  },
+  {
+    "n": "North East Fife",
+    "q": 8,
+    "r": -23
+  },
+  {
+    "n": "Angus",
+    "q": 7,
+    "r": -23
+  },
+  {
+    "n": "Dundee West",
+    "q": 6,
+    "r": -23
+  },
+  {
+    "n": "Perth and North Perthshire",
+    "q": 5,
+    "r": -23
+  },
+  {
+    "n": "Argyll and Bute",
+    "q": 4,
+    "r": -23
+  },
+  {
+    "n": "West Dunbartonshire",
+    "q": 2,
+    "r": -22
+  },
+  {
+    "n": "East Dunbartonshire",
+    "q": 3,
+    "r": -22
+  },
+  {
+    "n": "Stirling",
+    "q": 4,
+    "r": -22
+  },
+  {
+    "n": "Ochil and South Perthshire",
+    "q": 5,
+    "r": -22
+  },
+  {
+    "n": "Dundee East",
+    "q": 6,
+    "r": -22
+  },
+  {
+    "n": "Glenrothes",
+    "q": 7,
+    "r": -22
+  },
+  {
+    "n": "Kirkcaldy and Cowdenbeath",
+    "q": 6,
+    "r": -21
+  },
+  {
+    "n": "Dunfermline and West Fife",
+    "q": 5,
+    "r": -21
+  },
+  {
+    "n": "Falkirk",
+    "q": 4,
+    "r": -21
+  },
+  {
+    "n": "Cumbernauld, Kilsyth and Kirkintilloch East",
+    "q": 3,
+    "r": -21
+  },
+  {
+    "n": "Glasgow North East",
+    "q": 2,
+    "r": -21
+  },
+  {
+    "n": "Glasgow North West",
+    "q": 1,
+    "r": -21
+  },
+  {
+    "n": "Inverclyde",
+    "q": 0,
+    "r": -21
+  },
+  {
+    "n": "Paisley and Renfrewshire North",
+    "q": 0,
+    "r": -20
+  },
+  {
+    "n": "Glasgow North",
+    "q": 1,
+    "r": -20
+  },
+  {
+    "n": "Coatbridge, Chryston and Bellshill",
+    "q": 2,
+    "r": -20
+  },
+  {
+    "n": "Airdrie and Shotts",
+    "q": 3,
+    "r": -20
+  },
+  {
+    "n": "Linlithgow and East Falkirk",
+    "q": 4,
+    "r": -20
+  },
+  {
+    "n": "Edinburgh East",
+    "q": 5,
+    "r": -19
+  },
+  {
+    "n": "Edinburgh North and Leith",
+    "q": 4,
+    "r": -19
+  },
+  {
+    "n": "Edinburgh West",
+    "q": 3,
+    "r": -19
+  },
+  {
+    "n": "Motherwell and Wishaw",
+    "q": 2,
+    "r": -19
+  },
+  {
+    "n": "Glasgow Central",
+    "q": 1,
+    "r": -19
+  },
+  {
+    "n": "Glasgow South West",
+    "q": 0,
+    "r": -19
+  },
+  {
+    "n": "Paisley and Renfrewshire South",
+    "q": -1,
+    "r": -19
+  },
+  {
     "n": "North Ayrshire and Arran",
     "q": -2,
     "r": -18
@@ -1320,24 +1525,234 @@ const hexes = [
     "r": 0
   },
   {
-    "n": "",
+    "n": "South Suffolk",
+    "q": 10,
+    "r": 1
+  },
+  {
+    "n": "Ipswich",
+    "q": 9,
+    "r": 1
+  },
+  {
+    "n": "West Suffolk",
+    "q": 8,
+    "r": 1
+  },
+  {
+    "n": "South East Cambridgeshire",
+    "q": 7,
+    "r": 1
+  },
+  {
+    "n": "Cambridge",
+    "q": 6,
+    "r": 1
+  },
+  {
+    "n": "North West Cambridgeshire",
+    "q": 5,
+    "r": 1
+  },
+  {
+    "n": "Wellingborough",
+    "q": 4,
+    "r": 1
+  },
+  {
+    "n": "Harborough",
+    "q": 3,
+    "r": 1
+  },
+  {
+    "n": "Leicester East",
+    "q": 2,
+    "r": 1
+  },
+  {
+    "n": "Leicester West",
+    "q": 1,
+    "r": 1
+  },
+  {
+    "n": "Bosworth",
     "q": 0,
-    "r": 0
+    "r": 1
+  },
+  {
+    "n": "North Warwickshire",
+    "q": -1,
+    "r": 1
+  },
+  {
+    "n": "Sutton Coldfield",
+    "q": -2,
+    "r": 1
+  },
+  {
+    "n": "Aldridge-Brownhills",
+    "q": -3,
+    "r": 1
+  },
+  {
+    "n": "Cannock Chase",
+    "q": -4,
+    "r": 1
+  },
+  {
+    "n": "Walsall South",
+    "q": -5,
+    "r": 1
+  },
+  {
+    "n": "Walsall North",
+    "q": -6,
+    "r": 1
+  },
+  {
+    "n": "Wolverhampton North East",
+    "q": -7,
+    "r": 1
+  },
+  {
+    "n": "Telford",
+    "q": -8,
+    "r": 1
+  },
+  {
+    "n": "Shrewsbury and Atcham",
+    "q": -9,
+    "r": 1
+  },
+  {
+    "n": "Clwyd South",
+    "q": -10,
+    "r": 1
+  },
+  {
+    "n": "Montgomeryshire",
+    "q": -11,
+    "r": 1
+  },
+  {
+    "n": "Dwyfor Meirionnydd",
+    "q": -12,
+    "r": 1
+  },
+  {
+    "n": "Arfon",
+    "q": -13,
+    "r": 1
+  },
+  {
+    "n": "Brecon and Radnorshire",
+    "q": -10,
+    "r": 2
+  },
+  {
+    "n": "Ludlow",
+    "q": -9,
+    "r": 2
+  },
+  {
+    "n": "Wolverhampton South West",
+    "q": -8,
+    "r": 2
+  },
+  {
+    "n": "Wolverhampton South East",
+    "q": -7,
+    "r": 2
+  },
+  {
+    "n": "West Bromwich West",
+    "q": -6,
+    "r": 2
+  },
+  {
+    "n": "West Bromwich East",
+    "q": -5,
+    "r": 2
+  },
+  {
+    "n": "Birmingham, Perry Barr",
+    "q": -4,
+    "r": 2
+  },
+  {
+    "n": "Birmingham, Erdington",
+    "q": -3,
+    "r": 2
+  },
+  {
+    "n": "Birmingham, Hodge Hill",
+    "q": -2,
+    "r": 2
+  },
+  {
+    "n": "Nuneaton",
+    "q": -1,
+    "r": 2
+  },
+  {
+    "n": "South Leicestershire",
+    "q": 0,
+    "r": 2
+  },
+  {
+    "n": "Leicester South",
+    "q": 1,
+    "r": 2
+  },
+  {
+    "n": "Northampton North",
+    "q": 2,
+    "r": 2
+  },
+  {
+    "n": "North East Bedfordshire",
+    "q": 3,
+    "r": 2
+  },
+  {
+    "n": "Huntingdon",
+    "q": 4,
+    "r": 2
+  },
+  {
+    "n": "South Cambridgeshire",
+    "q": 5,
+    "r": 2
+  },
+  {
+    "n": "Saffron Walden",
+    "q": 6,
+    "r": 2
+  },
+  {
+    "n": "Braintree",
+    "q": 7,
+    "r": 2
+  },
+  {
+    "n": "Bury St Edmunds",
+    "q": 8,
+    "r": 2
+  },
+  {
+    "n": "Harwich and North Essex",
+    "q": 9,
+    "r": 2
+  },
+  {
+    "n": "Clacton",
+    "q": 9,
+    "r": 3
   },
   {
     "n": "",
-    "q": 0,
-    "r": 0
-  },
-  {
-    "n": "",
-    "q": 0,
-    "r": 0
-  },
-  {
-    "n": "",
-    "q": 0,
-    "r": 0
+    "q": 8,
+    "r": 3
   },
 
       // {
