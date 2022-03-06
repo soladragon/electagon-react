@@ -1,5 +1,310 @@
 const hexes = [
   {
+    "n": "North Ayrshire and Arran",
+    "q": -2,
+    "r": -18
+  },
+  {
+    "n": "East Renfrewshire",
+    "q": -1,
+    "r": -18
+  },
+  {
+    "n": "Glasgow South",
+    "q": 0,
+    "r": -18
+  },
+  {
+    "n": "Glasgow East",
+    "q": 1,
+    "r": -18
+  },
+  {
+    "n": "Livingston",
+    "q": 2,
+    "r": -18
+  },
+  {
+    "n": "Edinburgh South West",
+    "q": 3,
+    "r": -18
+  },
+  {
+    "n": "Edinburgh South",
+    "q": 4,
+    "r": -18
+  },
+  {
+    "n": "East Lothian",
+    "q": 5,
+    "r": -18
+  },
+  {
+    "n": "Tynemouth",
+    "q": 8,
+    "r": -17
+  },
+  {
+    "n": "Blyth Valley",
+    "q": 7,
+    "r": -17
+  },
+  {
+    "n": "Wansbeck",
+    "q": 6,
+    "r": -17
+  },
+  {
+    "n": "Berwick-upon-Tweed",
+    "q": 5,
+    "r": -17
+  },
+  {
+    "n": "Berwickshire, Roxburgh and Selkirk",
+    "q": 4,
+    "r": -17
+  },
+  {
+    "n": "Midlothian",
+    "q": 3,
+    "r": -17
+  },
+  {
+    "n": "Lanark and Hamilton East",
+    "q": 2,
+    "r": -17
+  },
+  {
+    "n": "East Kilbride, Strathaven and Lesmahagow",
+    "q": 1,
+    "r": -17
+  },
+  {
+    "n": "Rutherglen and Hamilton West",
+    "q": 0,
+    "r": -17
+  },
+  {
+    "n": "Central Ayrshire",
+    "q": -1,
+    "r": -17
+  },
+  {
+    "n": "Ayr, Carrick and Cumnock",
+    "q": 0,
+    "r": -16
+  },
+  {
+    "n": "Kilmarnock and Loudoun",
+    "q": 1,
+    "r": -16
+  },
+  {
+    "n": "Dumfries and Galloway",
+    "q": 2,
+    "r": -16
+  },
+  {
+    "n": "Dumfriesshire, Clydesdale and Tweeddale",
+    "q": 3,
+    "r": -16
+  },
+  {
+    "n": "Hexham",
+    "q": 4,
+    "r": -16
+  },
+  {
+    "n": "Newcastle upon Tyne North",
+    "q": 5,
+    "r": -16
+  },
+  {
+    "n": "Newcastle upon Tyne East",
+    "q": 6,
+    "r": -16
+  },
+  {
+    "n": "North Tyneside",
+    "q": 7,
+    "r": -16
+  },
+  {
+    "n": "South Shields",
+    "q": 8,
+    "r": -16
+  },
+  {
+    "n": "Sunderland Central",
+    "q": 8,
+    "r": -15
+  },
+  {
+    "n": "Jarrow",
+    "q": 7,
+    "r": -15
+  },
+  {
+    "n": "Washington and Sunderland West",
+    "q": 6,
+    "r": -15
+  },
+  {
+    "n": "Gateshead",
+    "q": 5,
+    "r": -15
+  },
+  {
+    "n": "Newcastle upon Tyne Central",
+    "q": 4,
+    "r": -15
+  },
+  {
+    "n": "Penrith and The Border",
+    "q": 3,
+    "r": -15
+  },
+  {
+    "n": "East Antrim",
+    "q": -6,
+    "r": -15
+  },
+  {
+    "n": "North Antrim",
+    "q": -7,
+    "r": -15
+  },
+  {
+    "n": "East Londonderry",
+    "q": -8,
+    "r": -15
+  },
+  {
+    "n": "Foyle",
+    "q": -9,
+    "r": -15
+  },
+  {
+    "n": "West Tyrone",
+    "q": -10,
+    "r": -14
+  },
+  {
+    "n": "Mid Ulster",
+    "q": -9,
+    "r": -14
+  },
+  {
+    "n": "South Antrim",
+    "q": -8,
+    "r": -14
+  },
+  {
+    "n": "Belfast North",
+    "q": -7,
+    "r": -14
+  },
+  {
+    "n": "North Down",
+    "q": -6,
+    "r": -14
+  },
+  {
+    "n": "Workington",
+    "q": 2,
+    "r": -14
+  },
+  {
+    "n": "Carlisle",
+    "q": 3,
+    "r": -14
+  },
+  {
+    "n": "Blaydon",
+    "q": 4,
+    "r": -14
+  },
+  {
+    "n": "North Durham",
+    "q": 5,
+    "r": -14
+  },
+  {
+    "n": "Houghton and Sunderland South",
+    "q": 6,
+    "r": -14
+  },
+  {
+    "n": "Easington",
+    "q": 7,
+    "r": -14
+  },
+  {
+    "n": "Hartlepool",
+    "q": 8,
+    "r": -14
+  },
+  {
+    "n": "Redcar",
+    "q": 8,
+    "r": -13
+  },
+  {
+    "n": "Stockton North",
+    "q": 7,
+    "r": -13
+  },
+  {
+    "n": "Sedgefield",
+    "q": 6,
+    "r": -13
+  },
+  {
+    "n": "City of Durham",
+    "q": 5,
+    "r": -13
+  },
+  {
+    "n": "North West Durham",
+    "q": 4,
+    "r": -13
+  },
+  {
+    "n": "Westmorland and Lonsdale",
+    "q": 3,
+    "r": -13
+  },
+  {
+    "n": "Barrow and Furness",
+    "q": 2,
+    "r": -13
+  },
+  {
+    "n": "Copeland",
+    "q": 1,
+    "r": -13
+  },
+  {
+    "n": "Strangford",
+    "q": -6,
+    "r": -13
+  },
+  {
+    "n": "Belfast East",
+    "q": -7,
+    "r": -13
+  },
+  {
+    "n": "Belfast West",
+    "q": -8,
+    "r": -13
+  },
+  {
+    "n": "Fermanagh and South Tyrone",
+    "q": -10,
+    "r": -13
+  },
+  {
     "n": "Upper Bann",
     "q": -10,
     "r": -12
