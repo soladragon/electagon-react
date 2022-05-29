@@ -1750,10 +1750,212 @@ const hexes = [
     "r": 3
   },
   {
-    "n": "",
+    "n": "Colchester",
     "q": 8,
     "r": 3
   },
+  {
+    "n": "Harlow",
+    "q": 7,
+    "r": 3
+  },
+  {
+    "n": "Hertford and Stortford",
+    "q": 6,
+    "r": 3
+  },
+  {
+    "n": "North East Hertfordshire",
+    "q": 5,
+    "r": 3
+  },
+  {
+    "n": "Hitchin and Harpenden",
+    "q": 4,
+    "r": 3
+  },
+  {
+    "n": "Bedford",
+    "q": 3,
+    "r": 3
+  },
+  {
+    "n": "Milton Keynes North",
+    "q": 2,
+    "r": 3
+  },
+  {
+    "n": "Northampton South",
+    "q": 1,
+    "r": 3
+  },
+  {
+    "n": "Daventry",
+    "q": 0,
+    "r": 3
+  },
+  {
+    "n": "Rugby",
+    "q": -1,
+    "r": 3
+  },
+  {
+    "n": "Coventry North East",
+    "q": -2,
+    "r": 3
+  },
+  {
+    "n": "Birmingham, Yardley",
+    "q": -3,
+    "r": 3
+  },
+  {
+    "n": "Birmingham, Ladywood",
+    "q": -4,
+    "r": 3
+  },
+  {
+    "n": "Birmingham, Edgbaston",
+    "q": -5,
+    "r": 3
+  },
+  {
+    "n": "Warley",
+    "q": -6,
+    "r": 3
+  },
+  {
+    "n": "Halesowen and Rowley Regis",
+    "q": -7,
+    "r": 3
+  },
+  {
+    "n": "Dudley North",
+    "q": -8,
+    "r": 3
+  },
+  {
+    "n": "Wyre Forest",
+    "q": -9,
+    "r": 3
+  },
+  {
+    "n": "Blaenau Gwent",
+    "q": -10,
+    "r": 3
+  },
+  {
+    "n": "Merthyr Tydfil and Rhymney",
+    "q": -11,
+    "r": 4
+  },
+  {
+    "n": "North Herefordshire",
+    "q": -10,
+    "r": 4
+  },
+  {
+    "n": "West Worcestershiree",
+    "q": -9,
+    "r": 4
+  },
+  {
+    "n": "Dudley South",
+    "q": -8,
+    "r": 4
+  },
+  {
+    "n": "Stourbridge",
+    "q": -7,
+    "r": 4
+  },
+  {
+    "n": "Birmingham, Northfield",
+    "q": -6,
+    "r": 4
+  },
+  {
+    "n": "Birmingham, Hall Green",
+    "q": -5,
+    "r": 4
+  },
+  {
+    "n": "Solihull",
+    "q": -4,
+    "r": 4
+  },
+  {
+    "n": "Coventry North West",
+    "q": -3,
+    "r": 4
+  },
+  {
+    "n": "Coventry South",
+    "q": -2,
+    "r": 4
+  },
+  {
+    "n": "Kenilworth and Southam",
+    "q": -1,
+    "r": 4
+  },
+  {
+    "n": "South Northamptonshire",
+    "q": 0,
+    "r": 4
+  },
+  {
+    "n": "Milton Keynes South",
+    "q": 1,
+    "r": 4
+  },
+  {
+    "n": "Mid Bedfordshire",
+    "q": 2,
+    "r": 4
+  },
+  {
+    "n": "Luton North",
+    "q": 3,
+    "r": 4
+  },
+  {
+    "n": "Stevenage",
+    "q": 4,
+    "r": 4
+  },
+  {
+    "n": "Welwyn Hatfield",
+    "q": 5,
+    "r": 4
+  },
+  {
+    "n": "Brentwood and Ongar",
+    "q": 6,
+    "r": 4
+  },
+  {
+    "n": "Chelmsford",
+    "q": 7,
+    "r": 4
+  },
+  {
+    "n": "Witham",
+    "q": 8,
+    "r": 4
+  },
+  {
+    "n": "Maldon",
+    "q": 9,
+    "r": 4
+  },
+  {
+    "n": "Rochford and Southend East",
+    "q": 8,
+    "r": 5
+  },
+
+
 
       // {
       //   "n": "Ashford",
