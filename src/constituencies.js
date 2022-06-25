@@ -1954,7 +1954,121 @@ const hexes = [
     "q": 8,
     "r": 5
   },
-
+  {
+    "n": "Rayleigh and Wickford",
+    "q": 7,
+    "r": 5
+  },
+  {
+    "n": "Basildon and Billericay",
+    "q": 6,
+    "r": 5
+  },
+  {
+    "n": "Hertsmere",
+    "q": 5,
+    "r": 5
+  },
+  {
+    "n": "St Albans",
+    "q": 4,
+    "r": 5
+  },
+  {
+    "n": "Hemel Hempstead",
+    "q": 3,
+    "r": 5
+  },
+  {
+    "n": "Luton South",
+    "q": 2,
+    "r": 5
+  },
+  {
+    "n": "South West Bedfordshire",
+    "q": 1,
+    "r": 5
+  },
+  {
+    "n": "Buckingham",
+    "q": 0,
+    "r": 5
+  },
+  {
+    "n": "Banbury",
+    "q": -1,
+    "r": 5
+  },
+  {
+    "n": "Oxford East",
+    "q": -2,
+    "r": 5
+  },
+  {
+    "n": "Warwick and Leamington",
+    "q": -3,
+    "r": 5
+  },
+  {
+    "n": "Meriden",
+    "q": -4,
+    "r": 5
+  },
+  {
+    "n": "Birmingham, Selly Oak",
+    "q": -5,
+    "r": 5
+  },
+  {
+    "n": "Bromsgrove",
+    "q": -6,
+    "r": 5
+  },
+  {
+    "n": "Mid Worcestershire",
+    "q": -7,
+    "r": 5
+  },
+  {
+    "n": "Worcester",
+    "q": -8,
+    "r": 5
+  },
+  {
+    "n": "Hereford and South Herefordshire",
+    "q": -9,
+    "r": 5
+  },
+  {
+    "n": "Monmouth",
+    "q": -10,
+    "r": 5
+  },
+  {
+    "n": "Torfaen",
+    "q": -11,
+    "r": 5
+  },
+  {
+    "n": "Cynon Valley",
+    "q": -12,
+    "r": 5
+  },
+  {
+    "n": "",
+    "q": -12,
+    "r": 5
+  },
+  {
+    "n": "",
+    "q": -12,
+    "r": 5
+  },
+  {
+    "n": "",
+    "q": -12,
+    "r": 5
+  },
 
 
       // {
